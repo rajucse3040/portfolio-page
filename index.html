@@ -1,28 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <style>
-        /* Base Styles */
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
-        body { line-height: 1.6; color: #333; background: #f4f4f4; }
-        nav { background: #2c3e50; color: #fff; padding: 1rem; text-align: center; }
-        #home { height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px; }
-        .card { background: #fff; padding: 20px; border-radius: 8px; }
-        #contact { padding: 40px; text-align: center; background: #2c3e50; color: #fff; }
-    </style>
+  <meta charset="UTF-8">
+  <title>Raju Ramalingam | iOS and Mac Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      background: #4d8835;
+      color: #d3caca;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    section {
+      padding: 2rem;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      border: 1px solid #95c88d;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    footer {
+      background: #4d8835;
+      color: #d3caca;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
 </head>
 <body>
-    <nav><h1>Portfolio</h1></nav>
-    <section id="home"><h2>Raju Ramalingam</h2><p>iOS and Mac Developer</p></section>
-    <section id="projects">
-        <div class="grid">
-            <div class="card"><h3>Project</h3><p>Desc</p></div>
-        </div>
-    </section>
-    <section id="contact"><h2>+5168810136</h2></section>
+
+<header>
+  <h1>Raju Ramalingam</h1>
+  <p>iOS and Mac Software Developer</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>Senior iOS and Mac Software Engineer with over 12 years of expertise in developing cutting-edge mobile applications. I specialize in Swift, RxSwift, SwiftUI, with a deep focus on performance optimization. Throughout my career, I’ve led cross-functional teams to launch some of the top-grossing apps, including an AI-powered health tracker that achieved 2 million downloads in its first quarter. I am passionate about mentoring junior developers and architecting scalable, future-proof solutions.</p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>My Optimum</h3>
+      <p>My Optimum is a native iOS application which is related to internet troubleshooting, gateway setup, TV setup and billing. The application comprises of self service features like network troubleshooting, manually setting up the internet gateway. Also user can customise the internet connectivity as per the wish list and can also perform speed test for internet connectivity. From this application user can manage their billing operation like payments, managing auto pay setup and adding payment methods (credit card and bank).</p>
+    </div>
+    <div class="card">
+      <h3>Syncup Tracker</h3>
+      <p>SyncUP Tracker is a native iOS application which is used as a tracking application with the help of IOT module. The application comprises of location tracking, SOS, Boundary controlling and Bluetooth connectivity. The application has the ability to sync with the GPS device to locate for enabling sound buzzers, tracking and SOS features. The application has the ability to notify the user whenever a boundary breach happens on the GPS device.</p>
+    </div>
+    <div class="card">
+        <h3>Safe Cab (Ionic)</h3>
+        <p> Safe cab is a cross platform mobile application which is used to track the vehicle locations using the Map. This is application will be supporting both Android and iOS versions. It has the option to book a cab from the application itself. The data would be stored on AWS server for platting graphs to get the statistics, So based on the travel, the workers would get the payment as per the company rules. Also has a attendance verification option for the drivers who uses this application.</p>   
+    </div>
+     <div class="card">
+        <h3>Nissan Connect Box</h3>
+        <p>Nissan Connect Box is iPhone application which is developed for App store. The application is being used by car owners who has the Nissan cars, and the application would provide the metadata of the car with the analysis reports via charts. Also, it has the map view which provides the navigation option whenever the car requires an emergency service. The application dashboard would have the options to show the car parts status like tyre pressure, fuel consumption, distance travelled etc.</p>
+    </div>
+    <div class="card">
+        <h3>Rlink</h3>
+        <p> Rlink is an iPhone application which is being developed for app store. The application is basically comprises of IOT functionalities and it will connect the device which would be placed on the car with the help of MQTT Broker. The application would connect to the device with help of common WIFI connection and will send the instructions to the device, according to the instructions, it would give the commands to the car devices.</p>
+       </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: r.rajucse@gmail.com</p>
+</section>
+
+<footer>
+  <p>© 2026 Raju Ramalingam</p>
+</footer>
+
 </body>
 </html>

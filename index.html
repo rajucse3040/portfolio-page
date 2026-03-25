@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <style>
+        /* Base Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+        body { line-height: 1.6; color: #333; background: #f4f4f4; }
+        nav { background: #2c3e50; color: #fff; padding: 1rem; text-align: center; }
+        #home { height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px; }
+        .card { background: #fff; padding: 20px; border-radius: 8px; }
+        #contact { padding: 40px; text-align: center; background: #2c3e50; color: #fff; }
+    </style>
+</head>
+<body>
+    <nav><h1>Portfolio</h1></nav>
+    <section id="home"><h2>[Your Name]</h2><p>Developer</p></section>
+    <section id="projects">
+        <div class="grid">
+            <div class="card"><h3>Project</h3><p>Desc</p></div>
+        </div>
+    </section>
+    <section id="contact"><h2>Contact</h2></section>
+</body>
+</html>
